@@ -6,7 +6,9 @@ import androidx.room.PrimaryKey
 @Entity
 data class entity(
 
-    @PrimaryKey val id: Int,
+    @PrimaryKey(autoGenerate = true)
+
+    val id: Int,
 
     val tname: String,
 
